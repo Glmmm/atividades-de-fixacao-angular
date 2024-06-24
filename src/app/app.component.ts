@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+
 @Component({
   selector: 'app-root',
   template: `
     <app-tasks />
-    <main class="container-fluid">
+    <main class="container">
       <app-main></app-main>
     </main>
   `,
