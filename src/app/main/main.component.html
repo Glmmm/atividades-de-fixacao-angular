@@ -1,0 +1,17 @@
+<main class="container">
+    <app-header></app-header>
+    <div class="row pt-5">
+        <section class="col-9">
+            <router-outlet></router-outlet>
+        </section>
+        <aside class="col">
+            <h3>Menu</h3>
+            <div class="row justify-content-center fs-4">
+                <a routerLink="xhurrasco/pessoas">Pessoas</a>
+                <a routerLink="xhurrasco">Xhurrasco</a>        
+                <a routerLink="xhurrasco/comidas">Comidas</a>
+            </div>
+        </aside>
+    </div>
+    <app-footer></app-footer>
+</main>

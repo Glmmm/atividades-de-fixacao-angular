@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PessoasComponent } from './xhurrasco/components/pessoas/pessoas.component';
 import { XhurrascoComponent } from './xhurrasco/xhurrasco.component';
-import { ComidasComponent } from './comidas/comidas.component';
+import { ComidasComponent } from './xhurrasco/components/comidas/comidas.component';
 import { MainComponent } from './main/main.component';
 import { EstatisticaComponent } from './xhurrasco/components/estatistica/estatistica.component';
 import { GeralComponent } from './xhurrasco/components/geral/geral.component';
