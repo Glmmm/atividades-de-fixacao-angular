@@ -1,16 +1,33 @@
-<h2>Xhurrasco</h2>
-<h3>Acesse:</h3>
-<ul>
-    <a routerLink="geral">
-        <li>Geral</li>
-    </a>
-    <a routerLink="pessoas">
-        <li>Pessoas</li>
-    </a>
-    <a routerLink="local">
-        <li>Local</li>
-    </a>
-    <a routerLink="estatistica">
-        <li>Estatisticas</li>
-    </a>
-</ul>
+<div class="container">
+    <h2>Xhurrasco</h2>
+    <p>Organize o xhurras por esses links</p>
+    <div class="row">
+        <div routerLink="geral" class="card col" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Geral</h5>
+                <p class="card-text">Visualizar informações gerais sobre o xhurras </p>
+            </div>
+        </div>
+
+        <div routerLink="pessoas" class="card col" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Pessoas</h5>
+                <p class="card-text">Gerenciar informações de pessoas cadastradas </p>
+            </div>
+        </div>
+
+        <div routerLink="local" class="card col" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Local</h5>
+                <p class="card-text">Gerenciar informações sobre o local do xhurras</p>
+            </div>
+        </div>
+
+        <div routerLink="estatistica" class="card col" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Estatistica</h5>
+                <p class="card-text">Visualiza estatisticas gerais</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { BlobOptions } from 'buffer';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
 
 @Component({
   selector: 'app-pessoas',
@@ -8,10 +6,11 @@ import { ChevronRightIcon } from 'primeng/icons/chevronright';
   styleUrl: './pessoas.component.scss',
 })
 export class PessoasComponent {
+  nome: string = 'Carlos';
+  telefone: string = '(18)996465611';
   checked: boolean = false;
 
   onClick() {
     return this.checked = !this.checked;
-    
   }
 }

@@ -1,4 +1,4 @@
-import { APP_INITIALIZER, NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule, OnInit } from '@angular/core';
 import {
   BrowserModule,
   provideClientHydration,
@@ -7,6 +7,8 @@ import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 //Imports do PrimeNG
 import { ButtonModule } from 'primeng/button';
@@ -14,7 +16,12 @@ import { PrimeNGConfig } from 'primeng/api';
 import { MainComponent } from './main/main.component';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
-import {InputSwitchModule} from 'primeng/inputswitch'
+import { InputSwitchModule } from 'primeng/inputswitch';
+import { InputTextModule } from 'primeng/inputtext';
+import { FloatLabelModule } from 'primeng/floatlabel';
+import { InputGroupModule } from 'primeng/inputgroup';
+import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
+
 // Componentes
 import { TaskComponent } from './tasks/tasks.component';
 import { HeaderComponent } from './main/components/header/header.component';
@@ -27,13 +34,13 @@ import { GeralComponent } from './xhurrasco/components/geral/geral.component';
 import { EditarComponent } from './xhurrasco/components/pessoas/editar/editar.component';
 import { CadastrarComponent } from './xhurrasco/components/pessoas/cadastrar/cadastrar.component';
 import { ComidasComponent } from './xhurrasco/components/comidas/comidas.component';
-
+import { FormsComponent } from './xhurrasco/components/local/components/forms/forms.component';
 
 //Factory de configs do primeng (Todas as configurações dele
 //podem ser alteradas aqui!
 const initializeAppFactory = (primeConfig: PrimeNGConfig) => () => {
-  (primeConfig.inputStyle = 'filled');
-  (primeConfig.ripple = true);
+  primeConfig.inputStyle = 'filled';
+  primeConfig.ripple = true;
 };
 
 @NgModule({
@@ -50,6 +57,8 @@ const initializeAppFactory = (primeConfig: PrimeNGConfig) => () => {
     CadastrarComponent,
     ComidasComponent,
     AppComponent,
+    FormsComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -62,6 +71,12 @@ const initializeAppFactory = (primeConfig: PrimeNGConfig) => () => {
     BreadcrumbModule,
     InputSwitchModule,
     CommonModule,
+    ReactiveFormsModule,
+    InputTextModule,
+    FloatLabelModule,
+    InputGroupAddonModule,
+    InputGroupModule,
+    
   ],
   providers: [
     provideClientHydration(),

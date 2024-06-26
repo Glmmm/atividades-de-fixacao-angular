@@ -1,11 +1,15 @@
-<h2>Cadastradas</h2>
-<div class="lista row">
-    <div class="pessoa col-8">
-        <i class="pi pi-user" style="font-size: 30px;"></i>
-        <h4>Nome do ser humano</h4>
+<section class="container">
+    <h2>Cadastradas</h2>
+    <div class="lista row">
+        <div class="pessoa col-8">  
+            <i class="pi pi-user" style="font-size: 30px;"></i>
+            <p>{{nome}}</p>
+            <i class="pi pi-phone"></i>
+            <p>{{telefone}}</p>
+        </div>
+        <span class="col">
+            <p-inputSwitch (onChange)="onClick()" />
+            <!-- <p *ngIf="checked;">Convidado</p> -->
+        </span>
     </div>
-    <span class="col ali">
-        <p-inputSwitch (onChange)="onClick()" />
-        <p *ngIf="checked;">Convidado</p>
-    </span>
-</div>
+</section>

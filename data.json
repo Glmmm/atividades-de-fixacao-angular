@@ -48,13 +48,13 @@
       "tasks": [
         {
           "id": 1,
-          "completed": false,
+          "completed": true,
           "description": "Faça outros 4 componentes [Pessoas, Local, Estatísticas, Geral] e bole alguma interface agradável apra alternar entre esses componentes.",
           "diff": 2
         },
         {
           "id": 2,
-          "completed": false,
+          "completed": true,
           "description": "Dentro do componente [Pessoas] você deverá mostrar uma lista de todas as pessoas cadastradas e nessa lista colocar algumas informações básicas da pessoa.\n além disso colocar um inputswitch para selecionar as pessoas que serão convidadas no xhurrasco.",
           "diff": 1
         },

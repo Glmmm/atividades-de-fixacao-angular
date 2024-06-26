@@ -1,18 +1,19 @@
-// .lista {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
-//   align-items: baseline;
-//   margin: 0 40px 0 0;
-//   padding: 20px 0 10px 0;
+.lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 40px 0 0;
+  padding: 20px 0 10px 0;
 
-//  border-bottom: solid 1px;
-// }
-// .pessoa {
-//   display: flex;
-//   flex-direction: row;
-//   gap: 20px;
-// }
-// .lista span {
-//   text-align: end;
-// }
+  border: solid 1px #C6C6C6;
+  border-radius: 5px;
+}
+.pessoa {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.lista span {
+  text-align: end;
+}
