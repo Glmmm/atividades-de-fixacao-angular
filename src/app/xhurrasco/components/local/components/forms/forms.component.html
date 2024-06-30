@@ -1,41 +1,30 @@
-<div [formGroup]="local">
-    <p-inputGroup>
-        <p-floatLabel>
-            <input pInputText formControlName="rua" />
-            <label>Rua</label>
-        </p-floatLabel>
-        <p-floatLabel>
-            <input pInputText formControlName="numero" />
-            <label>Numero</label>
-        </p-floatLabel>
-        <p-floatLabel>
-            <input pInputText formControlName="numero" />
-            <label>CEP</label>
-        </p-floatLabel>
-        <p-floatLabel>
-            <input pInputText formControlName="complemento" />
-            <label>Complemento</label>
-        </p-floatLabel>
-        <p-floatLabel>
-            <input pInputText formControlName="cidade" />
-            <label>Cidade</label>
-        </p-floatLabel>
-        <p-floatLabel>
-            <input pInputText formControlName="estado" />
-            <label>Estado</label>
-        </p-floatLabel>
-        <p-floatLabel>
-            <input pInputText formControlName="vagas" />
-            <label>Vagas</label>
-        </p-floatLabel>
-        <p-floatLabel>
-            <input pInputText formControlName="limite" />
-            <label>Limite de pessoas</label>
-        </p-floatLabel>
-        <p-floatLabel>
-            <input pInputText formControlName="aluguel" />
-            <label>Aluguel</label>
-        </p-floatLabel>
-    </p-inputGroup>
+<div class="row" [formGroup]="local">
+    <label>Rua</label>
+    <input pInputText formControlName="rua" />
 
+    <label>Numero</label>
+    <input pInputText formControlName="numero" />
+
+    <label>CEP</label>
+    <input pInputText formControlName="cep" />
+
+    <label>Complemento</label>
+    <input pInputText formControlName="complemento" />
+
+    <label>Cidade</label>
+    <input pInputText formControlName="cidade" />
+
+    <label>Estado</label>
+    <input pInputText formControlName="estado" />
+
+    <label for="vagas">Vagas</label>
+    <input pInputText formControlName="vagas" />
+
+    <label>Limite de pessoas</label>
+    <input pInputText formControlName="limite" />
+
+    <label>Aluguel</label>
+    <input pInputText formControlName="aluguel" />
+
+    <p-button class="text-end py-3" label="Criar local"></p-button>
 </div>

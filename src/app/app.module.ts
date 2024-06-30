@@ -1,4 +1,4 @@
-import { APP_INITIALIZER, NgModule, OnInit } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import {
   BrowserModule,
   provideClientHydration,
@@ -8,7 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
-
 
 //Imports do PrimeNG
 import { ButtonModule } from 'primeng/button';
@@ -31,10 +30,12 @@ import { XhurrascoComponent } from './xhurrasco/xhurrasco.component';
 import { LocalComponent } from './xhurrasco/components/local/local.component';
 import { EstatisticaComponent } from './xhurrasco/components/estatistica/estatistica.component';
 import { GeralComponent } from './xhurrasco/components/geral/geral.component';
-import { EditarComponent } from './xhurrasco/components/pessoas/editar/editar.component';
-import { CadastrarComponent } from './xhurrasco/components/pessoas/cadastrar/cadastrar.component';
 import { ComidasComponent } from './xhurrasco/components/comidas/comidas.component';
 import { FormsComponent } from './xhurrasco/components/local/components/forms/forms.component';
+import { CadastrarComidasComponent } from './xhurrasco/components/comidas/cadastrar/cadastrar.component';
+import { CadastrarPesssoasComponent } from './xhurrasco/components/pessoas/cadastrar/cadastrar.component';
+import { EditarPessoasComponent } from './xhurrasco/components/pessoas/editar/editar.component';
+import { EditarComidasComponent } from './xhurrasco/components/comidas/editar/editar.component';
 
 //Factory de configs do primeng (Todas as configurações dele
 //podem ser alteradas aqui!
@@ -53,12 +54,13 @@ const initializeAppFactory = (primeConfig: PrimeNGConfig) => () => {
     LocalComponent,
     EstatisticaComponent,
     GeralComponent,
-    EditarComponent,
-    CadastrarComponent,
     ComidasComponent,
     AppComponent,
     FormsComponent,
-    
+    CadastrarComidasComponent,
+    CadastrarPesssoasComponent,
+    EditarPessoasComponent,
+    EditarComidasComponent,
   ],
   imports: [
     BrowserModule,
@@ -76,7 +78,6 @@ const initializeAppFactory = (primeConfig: PrimeNGConfig) => () => {
     FloatLabelModule,
     InputGroupAddonModule,
     InputGroupModule,
-    
   ],
   providers: [
     provideClientHydration(),

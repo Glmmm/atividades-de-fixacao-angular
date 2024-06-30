@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Pessoas } from './services/models/pessoas';
+import { PessoasService } from './services/pessoas.service';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-pessoas',
@@ -6,11 +9,25 @@ import { Component } from '@angular/core';
   styleUrl: './pessoas.component.scss',
 })
 export class PessoasComponent {
-  nome: string = 'Carlos';
-  telefone: string = '(18)996465611';
+  pessoas: Pessoas[] = [];
+  convidado: string = 'Não convidado';
   checked: boolean = false;
 
+  constructor(private pessoasService: PessoasService) {}
+
+  ngOnInit(): void {
+    this.getAll();
+  }
+  public getAll(): void {
+    this.pessoasService.getPessoas().subscribe({
+      next: (item) => {
+        this.pessoas = item;
+      },
+      error: (err: HttpErrorResponse) => {},
+    });
+  }
   onClick() {
-    return this.checked = !this.checked;
+    this.checked = !this.checked;
+    this.checked ? this.convidado = "Convidado" : this.convidado = "Não convidado"
   }
 }

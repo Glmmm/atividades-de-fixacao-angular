@@ -1,19 +1,10 @@
-.lista {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 40px 0 0;
-  padding: 20px 0 10px 0;
-
-  border: solid 1px #C6C6C6;
-  border-radius: 5px;
-}
 .pessoa {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
+  padding: 20px 0 0 0;
+  border: solid 1px #c6c6c6;
+  border-radius: 5px;
+  margin: 10px 0 0 0;
 }
-.lista span {
-  text-align: end;
+.icon {
+  display: flex;
+  flex-direction: column;
 }

@@ -60,7 +60,7 @@
         },
         {
           "id": 3,
-          "completed": false,
+          "completed": true,
           "description": "Dentro do componente [Local] você deverá criar um formulário com todos os campos de Local, sendo esses : [rua, numero, cep, complemento, cidade, estado, vagasEstacionamento, limiteDePessoas, valorAluguel]. A interface do formulário é de sua escolha.",
           "diff": 1
         },
@@ -112,7 +112,7 @@
         },
         {
           "id": 12,
-          "completed": false,
+          "completed": true,
           "description": "Todos os formulários devem ser validados!",
           "diff": 2
         }
@@ -124,13 +124,13 @@
       "tasks": [
         {
           "id": 1,
-          "completed": false,
+          "completed": true,
           "description": "Faça outros 2 Componentes [Editar, Cadastrar].",
           "diff": 1
         },
         {
           "id": 2,
-          "completed": false,
+          "completed": true,
           "description": "Faça uma lista mostrando todas as pessoas que foram cadastradas.",
           "diff": 1
         },
